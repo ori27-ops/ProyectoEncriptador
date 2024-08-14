@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Ga+Maamli&family=Sixtyfour&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Ga+Maamli&family=Sixtyfour&display=swap");
+
+body {
+  text-align: center;
+  background-color: #73a3f0;
+}
+
+.card {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.titulo {
+  font-family: "Sixtyfour", sans-serif;
+  font-size: 60px;
+  color: white;
+}
+
+.mensaje {
+  font-family: "Bungee Inline", sans-serif;
+  font-size: 40px;
+  background-color: #6ca3d0;
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.mensaje textarea {
+  resize: none;
+}
+
+button {
+  display: inline-block;
+  background-color: #5a89b0;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  font-family: "Bungee Inline", sans-serif;
+}
