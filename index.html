@@ -11,28 +11,32 @@
     <header>
       <h1 class="titulo">Encriptador de mensaje</h1>
     </header>
+
     <main class="card">
       <form>
-        <section class="mensaje">
-          <label for="mensaje">Mensaje secreto</label>
-          <textarea
-            id="mensaje"
-            rows="4"
-            cols="50"
-            placeholder="Ingrese el texto"
-            maxlength="100"
-            minlength="1"
-          ></textarea>
-          <br />
-          <label for="clave">Clave</label>
-          <textarea
-            id="clave"
-            rows="2"
-            cols="30"
-            placeholder="Ingresa tu clave secreta aqui"
-            maxlength="100"
-            minlength="1"
-          ></textarea>
+        <section class="mensaje-clave">
+          <div class="campo">
+            <label for="mensaje">Mensaje secreto</label>
+            <textarea
+              id="mensaje"
+              rows="4"
+              cols="50"
+              placeholder="Ingrese el texto"
+              maxlength="500"
+              minlength="1"
+            ></textarea>
+          </div>
+          <div class="campo">
+            <label for="clave">Clave</label>
+            <textarea
+              id="clave"
+              rows="2"
+              cols="30"
+              placeholder="Ingresa tu clave secreta aqui"
+              maxlength="40"
+              minlength="1"
+            ></textarea>
+          </div>
         </section>
         <br />
       </form>
