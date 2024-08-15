@@ -3,7 +3,7 @@
 body {
   text-align: center;
   font-family: "Sacramento", cursive;
-  background-image: url("../img/FONDO11.png");
+  background-image: url('../img/FONDO11.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -22,7 +22,7 @@ form label {
 .mensaje-clave {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 20px; 
 }
 
 .campo {
@@ -40,7 +40,7 @@ textarea {
   background-repeat: no-repeat;
   border: none;
   width: 410px;
-  height: 210px;
+  height: 183px;
   resize: none;
   padding: 80px 25px;
   padding-right: 40px;
