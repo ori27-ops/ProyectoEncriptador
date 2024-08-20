@@ -3,44 +3,32 @@
 body {
   text-align: center;
   font-family: "Sacramento", cursive;
-  background-image: url("../img/FONDO11.png");
+  background-image: url(/assets/img/fondo.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .titulo {
-  margin: 50px auto;
+  margin: 30px auto 5px;
   font-size: 70px;
 }
 
 form label {
   display: block;
-  margin: 15px auto;
+  margin: 0px auto 15px;
   font-size: 36px;
-}
-.mensaje-clave {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.campo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 textarea {
-  font-family: "Sacramento", cursive;
   font-family: "Parisienne", cursive;
-  background-image: url(/assets/img/img5.png);
+  background-image: url(/assets/img/pergamino.png);
   background-color: #b8906f;
   background-size: 475px 342px;
   background-repeat: no-repeat;
   border: none;
   width: 410px;
-  height: 210px;
+  height: 183px;
   resize: none;
   padding: 80px 25px;
   padding-right: 40px;
@@ -54,7 +42,7 @@ input {
   text-align: center;
 }
 
-button {
+section button {
   width: 145px;
   margin: 16px;
   font-size: 30px;
@@ -64,10 +52,48 @@ button {
   font-family: "Sacramento", cursive;
 }
 
-button:hover {
+section button:hover {
   background-color: #584534;
   color: white;
   border: 1px solid #584534;
+}
+
+.clave {
+  margin: 0 auto;
+  background-color: #f5e1ce;
+  border: 3px solid #584534;
+  border-radius: 10px;
+  width: 200px;
+  padding: 5px;
+}
+
+.clave button {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+}
+
+.clave input {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  font-family: "Sacramento", cursive;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+  -webkit-appearance: none; /* Chrome, Safari */
+  appearance: none; /* Otros navegadores modernos */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#clave-numeros {
+  font-size: 40px;
 }
 
 textarea#story {
@@ -86,4 +112,20 @@ input:focus {
 
 textarea::placeholder {
   text-align: center;
+}
+
+form {
+  display: flex;
+}
+
+form div {
+  flex: 50%;
+}
+
+form .divIzquierda {
+  margin-left: 180px;
+}
+
+form .divDerecha {
+  margin-right: 180px;
 }

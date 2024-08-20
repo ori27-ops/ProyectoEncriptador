@@ -13,38 +13,41 @@
     </header>
 
     <main class="card">
-      <form>
-        <section class="mensaje-clave">
-          <div class="campo">
-            <label for="mensaje">Mensaje secreto</label>
+      <section class="mensaje-clave">
+        <form>
+          <div class="divIzquierda">
+            <label for="mensaje">Mensaje Ingresado</label>
             <textarea
               id="mensaje"
-              rows="4"
-              cols="50"
               placeholder="Ingrese el texto"
               maxlength="500"
               minlength="1"
             ></textarea>
           </div>
-          <div class="campo">
-            <label for="clave">Clave</label>
+          <div class="divDerecha">
+            <label for="clave">Resultado</label>
             <textarea
-              id="clave"
-              rows="2"
-              cols="30"
-              placeholder="Ingresa tu clave secreta aqui"
-              maxlength="40"
+              id="mensaje2"
+              maxlength="500"
               minlength="1"
+              readonly
             ></textarea>
           </div>
-        </section>
-        <br />
-      </form>
+        </form>
+      </section>
+
+      <label for="clave" id="clave-numeros">Clave</label>
+      <div class="clave">
+        <button class="menos" onclick="subtractValue();"><span>-</span></button>
+        <input id="clave" type="number" min="1" max="999" value="100" />
+        <button class="mas" onclick="addValue();"><span>+</span></button>
+      </div>
 
       <section>
-        <button>Cifrar</button>
-        <button>Descifrar</button>
+        <button id="cifrar">cifrar</button>
+        <button id="descifrar">descifrar</button>
       </section>
     </main>
   </body>
+  <script src="./assets/js/script.js"></script>
 </html>
