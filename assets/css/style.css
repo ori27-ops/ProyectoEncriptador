@@ -3,7 +3,7 @@
 body {
   text-align: center;
   font-family: "Sacramento", cursive;
-  background-image: url(/assets/img/fondo.png);
+  background-image: url("../img/FONDO11.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -19,10 +19,21 @@ form label {
   margin: 0px auto 15px;
   font-size: 36px;
 }
+.mensaje-clave {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 textarea {
   font-family: "Parisienne", cursive;
-  background-image: url(/assets/img/pergamino.png);
+  background-image: url("../img/pergamino.png");
   background-color: #b8906f;
   background-size: 475px 342px;
   background-repeat: no-repeat;
